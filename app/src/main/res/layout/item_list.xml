@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_7sdp"
+    app:cardElevation="@dimen/_5sdp"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="@dimen/_3sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical">
+        <!--<android.support.v7.widget.CardView-->
+            <!--android:id="@+id/card_view"-->
+            <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--card_view:cardBackgroundColor="#DCDCDC"-->
+            <!--card_view:cardCornerRadius="10dp"-->
+            <!--card_view:cardElevation="5dp"-->
+            <!--android:paddingTop="@dimen/_3sdp"-->
+            <!--android:paddingBottom="@dimen/_3sdp"-->
+            <!--android:paddingRight="@dimen/_5sdp"-->
+            <!--card_view:cardUseCompatPadding="true">-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18ssp"
+            tools:text="webiks" />
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/no_image_available"/>
+
+    </LinearLayout>
+        <!--</android.support.v7.widget.CardView>-->
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:paddingLeft="@dimen/_5sdp"
+            android:textSize="@dimen/_10ssp"/>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:padding="@dimen/_5sdp">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:id="@+id/imageView1"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/no_image_available"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginRight="@dimen/_5sdp"
+                >
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtTitle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="webiks"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="@dimen/_14ssp"/>
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:id="@+id/txtDescription1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="PollsTap Booth"
+                    android:textSize="@dimen/_12ssp"
+                    />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
